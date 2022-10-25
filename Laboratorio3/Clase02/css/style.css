@@ -1,0 +1,33 @@
+
+h1{
+    color: aqua;
+    background-color: red;
+}
+
+#pepe{
+    color: blue;
+}
+.azul{
+    color: blueviolet;
+    background-color: bisque;
+}
+
+table,th,td{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 5px 10px;
+
+}
+#ingles{
+    text-align: center;
+}
+
+th{
+    background-color: greenyellow;
+}

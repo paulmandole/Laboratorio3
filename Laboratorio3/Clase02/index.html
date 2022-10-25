@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>primer programa</title>
+      <link rel="stylesheet" href="./css/style.css">
+      <script src="./js/index.js" defer></script>
+
+  </head>
+  <body>
+      //etiquetas de titulo shift alt flecha copaia linea
+
+
+      <h1 id="titulo">titulo principal</h1>
+
+      # para descativar
+      <form action="pagina3.html" >
+        place holder muestra algo en negrita dentro
+        <label >Nombre:
+          <input type="text" name="nombre" placeholder="ingrese nombre">
+        </label>
+        
+        
+        <br>
+        for para linkear el label con el input  name hace una solicitud al get  va como nombre de la variable q envies
+        tipo password lo que hace es que no se vea la q escribis
+        <label for="apellido">Apellido:</label>
+          <input type="password" placeholder="ingrese Apellido" name="apellido" id="apellido">
+        <input type="submit" value="Alta usuario">
+        submit avandona la pag donde estamos envia peticion al server
+        <br>
+        <br>
+
+        genera un recuerdro  si tiene el mismo name los radio funcionan en paralelo
+        cheketd por defult aparece chequeado
+        <br>
+        <fieldset>
+          <legend>Genero</legend>
+          <input type="radio" name="genero" checked value="masculino">Masculino
+          <input type="radio" name="genero" value="femenino">Femenino
+        </fieldset>
+
+        <br>
+        multichek
+        <br>
+
+        <fieldset>
+          <legend>Deportes</legend>
+          <input type="checkbox" name="deporte" checked value="tenis">tenis
+          <input type="checkbox" name="deporte" value="futbol">futbol
+          <input type="checkbox" name="deporte" value="golf">golf
+        </fieldset>
+        
+        <br>
+        combo box lista desplegable
+        <br>
+
+        <select name="comidaFav" id="">
+          <option value="pizza">Pizza</option>
+          <option value="sopa">sopa</option>
+          <option value="sushi">sushi</option>
+          <option value="papas">papas</option>
+        </select>
+        <br>
+        edad number
+        <br>
+        <label for="txtEdad">Edad:</label>
+          <input type="number" placeholder="ingrese edad" name="edad" id="edad" min="18" max="25" value="23">
+
+        <br>
+        required capo requerido autocomplet ofpara q no auto complete averiguar experciones regulares
+        <br>
+          <label for="txtEmail">email:</label>
+          <input type="email" placeholder="ingrese email"  name="email" id="email" required>
+
+          <br> color <br>
+          <input type="color">
+          <br> rango <br>
+          <input type="range" name="" id="">
+          <br><br>
+          <label for="">Comentarios</label>
+          <textarea title="comentarios" name="" id="" cols="30" rows="10"></textarea>
+
+          <br>boton qu elimpia form bton le puedo poner lo que quiera<br>
+          <form action="">
+            <input type="submit">
+            <input type="reset" value="Limpiar">
+            <input type="button" value="clikme">
+            <br>un button etiqueta funciona como submit<br>
+            <button>ClikMe2conetiqueta button</button>
+          </form>
+
+          <br>abrir carpeta<br>
+          <input type="file" name="" id="">
+
+      </form>
+      <br>para una cita deja sangria<br>
+      <blockquote>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint enim voluptas doloremque autem aliquid nam suscipit voluptatem, commodi nostrum laborum vero minus magni, eum, voluptatum ex? Quod eligendi deserunt nam?
+
+      </blockquote>
+      <br>para una cita que dijo alguien<br>
+      <cite>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi optio quidem corrupti. Quam sunt natus magni, tempora voluptatibus nostrum maiores placeat, magnam iure in aliquid rerum, quasi distinctio quibusdam?
+      </cite>
+
+      <br>para q se comporte igual como lo escribo etiqueta pre<br>
+      <p>
+        esto quiero 
+        q se vea &nbsp;(esto para el espacio) &copy; tal cual 
+        en la pag
+      </p>
+      <br>colocar videos<br>
+      <video poster="" controls src=""></video>
+      <br>importat videos de yutube o map para incorporar pg de otros lo copio del link de la pag<br>
+      <iframe src="" frameborder="0"></iframe>
+
+      <header>logo-titulo-barra navegacion-busqueda</header>
+      <nav>enlaces a-</nav>
+      <main>1 por pagina envuelve el contenido principal de la pagina </main>
+      <article>independiente tiene sentido por si solo ejm producto de mercado libre</article>
+      <section>secion ejm series o series recomendadas</section>
+      <footer>pie enlaces a otras paginas o informacion</footer>
+      <aside>no tiene nada q ver con el conetenido de la pag parte del conetenido de la pagina ,enlaces,publicidades</aside>
+  
+      <figure>figura la imagen de por si </figure>
+      <caption>contenedor de imagen y descripicion</caption>
+
+
+      <br>
+      con numeral #y el id va donde lo quiera
+      <a href="#fin">ir al final</a>
+      vinculo # para desactivar cuando se esta maquetendo 
+      <br>
+      para poner un enlace externo tengo q poner el protocolo no es necesiario elwww
+      <br>
+      <br>propiedad target _blank lo habre en nueva petania
+      <br> rel="nooopener norreferer nofollow" no se pasa las referencias de lo que hicimos antes
+      <a href="http://www.google.com" target="_blank" rel="nooopener norreferer nofollow"><img src="../Clase02/images/5847f9cbcef1014c0b5e48c8.png" alt="icono google" width="50" height="50"></a>
+      <br>
+        <hr>
+      <br>
+
+      <img src="http://placeimg.com/400/600/TECH" alt="imagen de tecnologia">
+      <img src="./images/b84e69b4ea54ebecedce51024678c597.jpg" alt="imagen de grup">
+
+      //ul listas sin orden tiene vinietas
+      <h3>Dias habiles</h3>
+      type para cambiar el formato ejm circle
+      <ul>
+        <li>Lunes</li>
+        <li>Martes</li>
+        <li>Miercoles</li>
+        <li>Jueves</li>
+        <li>Viernes</li>
+      </ul>
+      //ol listas ordenadas
+      //hr cambiar el contenido es una linea diferenciadora
+      <hr>
+      <h3>Frutas</h3>
+      <ol>
+        <li>pera</li>
+        <li>manzana</li>
+        <li>banana</li>
+        <li>melon</li>
+      </ol>
+      <a href="pagina2.html#cap25">capitulo 25</a>
+      //dl lista de definicionno se usa
+
+      //tabla solo tiene filas esta compuesto por tr th es de encabezado de columna 
+      td para la data
+      <table>
+        <thead>
+          <tr>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Programacion III</td>
+            <td>Laboratorio III</td>
+            <td colspan="2" id="ingles">Ingles</td>
+            <td>Investigacion</td>
+          </tr>
+          <tr>
+            <td>Laboratorio III</td>
+            <td>Orgnanizacion</td>
+            <td>Organizacion Empresa</td>
+            <td>Investigacion</td>
+          </tr>
+         
+        </tbody>
+
+      </table>
+      
+
+      <h2 id="pepe">titulo Secundario</h2>
+      <h3 class="azul">titulo Secundario</h3>
+      <button class="azul" id="btnSaludar">click me</button>
+      <div>etiqueta contenedora de bloque ocuapa todo el ancho</div>
+      <span class="azul">etiquetas contenedoras de linea ocuapa solo el contenido</span>
+      <p>Lorem ipsum dolor sit amet <strong>esto es importante dentro de mi pagina para decirle a los motores q el texto es muy importante</strong> consectetur adipisicing elit.Facilis quia, iste, saepe dolorum consequatur <em>esto tambien es importante</em> vitae enim ullam sequi nostrum rerum delectus quos officia voluptates numquam. Modi quidem id soluta aliquid ut deleniti ab totam autem necessitatibus, laborum similique, animi obcaecati ipsam vitae corrupti porro possimus ipsum sed cum reiciendis? Minima ducimus et quae consequatur itaque vel labore nulla, totam voluptatibus porro? Eaque eius incidunt dolorum atque repellendus qui odio dolor, ad, nulla sit sequi maiores labore, necessitatibus excepturi illo aperiam. Quia minus accusantium autem, nisi in ratione inventore necessitatibus labore ad sint fuga quod optio odit nihil. Totam, tempora voluptatum.</p>
+      // p*2>lorem100 atajo para crear dos parrafos con relleno de 100 letras
+      //div>p*3.lorem100
+      <div >
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam voluptatibus sequi quis optio neque asperiores laborum magni fuga adipisci sunt consequatur veritatis eos rem a modi dolorem impedit cupiditate unde mollitia aliquid illum, autem fugiat et totam? Nostrum veniam sed consequuntur reiciendis cumque recusandae quae sequi, odio quaerat nobis vitae ducimus libero blanditiis et, nulla quo esse repellat quia suscipit tempora quidem illo dignissimos voluptate. Rerum doloremque excepturi in, harum quisquam facilis. Totam, voluptatem tenetur at, sint delectus voluptates sequi dolor ratione quas quaerat maxime quisquam labore magnam aut, numquam voluptas ullam beatae non cumque perferendis eos minus? Atque, accusamus!</p>
+        <p>Saepe explicabo assumenda, a placeat cum amet velit libero aspernatur ipsam impedit illum maxime, dicta eos minus maiores fuga soluta. Porro eum delectus magni, officia totam accusantium fugit nihil omnis blanditiis id corporis vero libero ratione eligendi quasi, labore, quis quam! Asperiores sapiente rem reiciendis laudantium quo eos porro ratione ea esse. Culpa, quaerat aut. Tenetur quo enim modi laboriosam omnis ullam laudantium, quam, quasi maiores et sit sequi amet. Modi, adipisci rem, ratione voluptas ad exercitationem molestiae ut labore possimus itaque voluptate quaerat beatae ullam voluptatibus mollitia. Quia doloribus aliquam minus quis suscipit eaque in sit, officiis ratione ab.</p>
+        <p>Provident repellat, harum numquam modi unde eos <span>esto es un span quiero hacer algo con este elemento para css</span> commodi earum temporibus consequuntur sapiente dolor, delectus ad quaerat et aliquam! Odio maiores, officia cum, fuga cumque pariatur illum dolores possimus voluptatem laboriosam ab odit at voluptate modi! Nihil iste rem natus ab magnam. Quam quos distinctio voluptatum aut! Vero laudantium adipisci maiores eius doloremque dolor quod. Aliquid iste rem eaque? Beatae libero odit aut modi recusandae, facere, mollitia magnam voluptates culpa id ducimus repudiandae. Iure, amet delectus animi saepe iste ullam cumque non, aut eum consequatur molestias? Nemo veniam, cumque facere beatae iste enim unde, nihil repellat recusandae error similique modi earum!</p>
+      </div>
+
+      <h2 id="fin">FIn de la pagina</h2>
+      <a href="#titulo">ir al titulo</a>
+    </body>
+</html>
