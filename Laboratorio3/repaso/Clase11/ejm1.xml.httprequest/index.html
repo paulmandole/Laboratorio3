@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <a href="https://icons8.com/preloaders/">icons de carga</a>
+
+    <h2>TraerPersonas</h2>    
+    <button id="btnGetP">traer Personas Ajaxs</button>
+    <button onclick="getPersona(2)">traer Persona 3 Ajaxs</button>
+    <button id="btnGetPFetch">traer Personas Fetch</button>
+    <button id="btnGetPAxios">traer Personas Axios</button>
+    <button id="btnGetPAxiosAsync">traer Personas Axios Async</button>
+    <button id="btnGetPFetchAsync">traer Personas Fetch Async</button>
+
+    <h2>CrearPersona</h2>
+    <br><br>
+    <button id="createPersona">CreatePerosona</button>
+    <button id="createPersonaAxiosAsync">CreatePersonaAxiosAsync</button>
+    <button id="createPersonaFetch">CreatePersonas Fetch</button>
+
+    <br><br>
+    <h2>Eliminar Persona</h2>
+    <button onclick="deletePersona(2)">Eliminar el 2</button>
+    <button onclick="deletePersonaFetch(8)">Eliminar el 8</button>
+    <button onclick="deletePersonaAxiosAsync(9)">Eliminar el 9</button>
+
+    <h2>Editar</h2>
+    <br><br>
+    <button onclick="updatePersona()">Editar Perosna Ajax(11)</button>
+    <div class="spinner"></div>
+
+</body>
+</html>

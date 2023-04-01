@@ -1,0 +1,27 @@
+comandos node para instalar server
+
+de manera global
+npm install -g json-server
+
+dentro de terminal command prompt 
+iniciar
+json-server -w db.json
+
+en el puerto que quiera es
+json-server -w -p3001 db.json
+
+poner delay (-dvalor en milisegundos)
+json-server -w -d2000 db.json
+
+instalar en carpeta(no poner mayusculas ni espacios)
+npm init -y
+
+instalar json server
+npm i json-server
+
+agregar dentro de scrips
+"start":"json-server -w -d2000 db.json", para que se inicia con  npm start
+
+
+bajar el server
+ctrol+c

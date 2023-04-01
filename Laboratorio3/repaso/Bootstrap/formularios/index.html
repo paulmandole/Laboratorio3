@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/bootstrap.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+   
+    <div class="container">
+      <!--
+        form-group -> para encerrar un label con un controlador
+
+        form-control para que se ilumine y acmbie los bordes
+        se suele poner un smmal con una aclaracion y las clases
+        form-text text-muted
+
+        radio buttons
+        div  con  form-check
+        input radio  form-check-input
+        label form-check-label
+        form-check-inline hace que queden en linea va junto al form chek
+      -->
+      <form>
+        <div class="row">
+          <div class="form-group col-4">
+            <label for="txtNombre">Nombre:</label>
+            <input type="text" id="txtNombre" class="form-control">
+            <small class="form-text text-muted">largomaximo 20 caracteres</small>
+          </div>
+      </div>
+        <div class="row">
+          <div class="form-group col-4">
+            <label for="txtApellido">Apellido:</label>
+            <input type="text" id="txtApellido" class="form-control">
+          </div>
+      </div>
+      <div class="row ">
+        <div class="col-4">
+          <div class="form-check form-check-inline">
+            <input type="radio" name="rdoMasculino" id="rdoMasculino" class="form-check-input">
+            <label for="rdoMasculino" class="form-check-label">Masculino</label>
+          </div>
+        
+          <div class="form-check form-check-inline">
+            <input type="radio" name="rdoFemenino" id="rdoFemenino" class="form-check-input">
+            <label for="rdoFemenino" class="form-check-label">Femenino</label>
+          </div>
+        </div>
+      </div>
+
+      </form>
+    </div>
+  </body>
+</html>
+
+<!--2:13-->

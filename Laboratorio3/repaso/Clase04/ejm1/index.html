@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="./js.js"></script>--> 
+    <!--Defer es para q espere que cargue el Dom-->
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+<body>
+
+
+
+    <!--no usar asi-->
+    <!--<button onclick="saludar();">Clikc me</button>-->
+    <button id="btn">Cliquear</button>
+
+    <button id="btnModal">AbrirModal</button>
+    <!-- Esto es una ventana modal dialog es como el showDialog
+    porpiedad open para abrir -->
+    <dialog style="height: 100;width: 100;" open id="dialog">
+        <form>
+          <label >Nombre</label>
+          <!--input por default es text name se usa para darle nombre por get 
+          autocomplete="off para que no muestre el atucompletado
+          placeholder="Ingrese nombre" muestra un texto cuando no se ingreso nada
+          required es requerido
+          pattern="" para validar puedo escribir una exprecion regular-->
+          <input  type="text" name="nombre" autocomplete="off" placeholder="Ingrese nombre" >
+          <br><br>
+          <label >password</label>
+          <input  type="password">  
+          <br><br>
+          <label >Email</label>
+          <input  type="email"> 
+          <button type="submit">Enviar</button>
+          <button id="btnCerrar">Cerrar</button>
+      </form>
+    </dialog>
+
+
+    <!--Formularios-->
+    <h2>Formularios</h2>
+    <!--Uso clasico del formulario a travez de metodos action y method no se usa-->
+    <form>
+        <!--4 tipos de controles input,label,select,button-->
+        <!--label se usa para asociar con otro a travez del for-->
+        <label for="txtNombre" >Nombre</label>
+        <!--input por default es text name se usa para darle nombre por get 
+        autocomplete="off para que no muestre el atucompletado
+        placeholder="Ingrese nombre" muestra un texto cuando no se ingreso nada
+        required es requerido
+        pattern="" para validar puedo escribir una exprecion regular-->
+        <input id="txtNombre" type="text" name="nombre" autocomplete="off" placeholder="Ingrese nombre" required>
+        <br><br>
+        <label for="txtPass">password</label>
+        <input id="txtPass" type="password">  
+        <br><br>
+        <label for="txtMail">Email</label>
+        <input id="txtMail" type="email"> 
+        <br><br>
+        <label for="txtNumero">Numero</label>
+        <input id="txtNumero" max="100" min="0" value="10" type="number">  
+        <br><br>
+        <label for="color">Color</label>
+        <input id="color" type="color">
+        <br><br>
+        <label for="">Fecha</label>
+        <input type="date">
+        <br><br>
+        <label for="">archivo</label>
+        <input type="file">
+        <br><br>
+        <label for="">url</label>
+        <input type="url">
+        <br><br>
+        <label for="">search</label>
+        <input type="search">
+        <br><br>
+        
+        <!-- propiedad name para agruparlos 
+        radio para solo uno 
+        chekbox para seleccion multiple sin el mismo nombre
+        checked para selecionarlo de fault-->
+        <fieldset>
+            <legend>Deportes Practicado Seleccion unica</legend>
+            <input type="radio" name="deporte" value="Football">Football <br>
+            <input type="radio" name="deporte" value="rugby" checked>rugby <br>
+            <input type="radio" name="deporte" value="Natacion">Natacion <br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Deportes Practicado multiple seleccion</legend>
+            <input type="checkbox" name="deporte" value="Football">Football <br>
+            <input type="checkbox" name="deporte" value="rugby" checked>rugby <br>
+            <input type="checkbox" name="deporte" value="Natacion">Natacion <br>
+        </fieldset>
+        <br><br>
+
+          <!--Combo box-->
+          <!--value puede ser la opcion lo q me envie o el mismo item
+            multiple para selecionar mas de un elemento -->
+          <label for="cboFrutas">Frutas simple</label>
+          <select name="fruta" id="cboFrutas" >
+              <option value="banana">Banana</option>
+              <option value="manzana">manzana</option>
+              <option value="pera">pera</option>
+              <option value="melon">melon</option>
+          </select>
+        <br><br>
+        <label for="cboFrutasMultiple">Frutas</label>
+          <select name="fruta" id="cboFrutasMultiple" multiple>
+              <option value="banana">Banana</option>
+              <option value="manzana">manzana</option>
+              <option value="pera">pera</option>
+              <option value="melon">melon</option>
+          </select>
+          <br><br>
+          <label for="">Comentarios:</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <br><br>
+          <label for="">Videos</label>
+          <!--propiedad controls para los controles
+            autoplay muted se auto executa el video
+            preload carga automaticamente
+            poster="" para q no quede el cuadrado negro se puede poner una imagen-->
+          <video src="https://www.youtube.com/watch?v=Bzq41kYLRSI" controls></video>
+          <br><br> 
+          <label for="">insertar una pagina web completa</label>
+          <iframe src="./pagina1.html" frameborder="0"></iframe>         
+          <br><br>
+          <label for="">video externo o otra cosa maps etc</label>
+          <br>
+          <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <br><br>
+            <!--Templates es para que los navegadores encuentre mejor mi noticia o lo que quiera-->
+          <div itemscope>
+            <h3>zapatilla deportiva</h3>
+            <p itemprop="brand">Marca:Nike</p>
+            <p itemprop="price">precio:$12000</p>
+            <p>Descripcion:Altas yantas</p>
+            <img src="" alt="">
+          </div>
+          <br><br>
+          <a href="https://schema.org/" target="_blank">esquemas para q encuentre el buscador mi producto o lo que sea</a>
+          <br><br>
+          <h2>Prueva de datos enriquesidos</h2>
+          <a href="https://search.google.com/test/rich-results?hl=ES" target="_blank">pruevaDatos</a>
+          <br><br>
+          <h2>para instrgram o face o twiter</h2>
+          <a href="https://ogp.me/" target="_blank">opengraf</a>
+          <br><br>
+        <!--Control de tipo submit es para enviar por deafault value cambia el texto-->
+        <!--<input type="submit" value="AltaPersona">-->
+
+        <button>Enviar Datos</button>
+        <br>
+        <!--Resetea el form-->
+        <input type="reset">
+    </form>
+    <br><br>
+    <h2>Descripcion</h2>
+    <!-- Muestra detalles con la flechita  -->
+
+    <details>
+      <summary>Leguaje programacion</summary>
+      <h2>prueba details</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, repellat obcaecati accusamus ratione quaerat unde. Vitae ipsa cum accusantium placeat animi, nulla qui asperiores, consequatur eum error, suscipit odit sed?</p>
+    </details>
+
+    <script>
+
+      document.getElementById("btnCerrar").addEventListener("click",()=>{
+        //close para cerrar el dialog
+        document.getElementById("dialog").close();
+      });
+
+      document.getElementById("btnModal").addEventListener("click",()=>{
+        //abrir el dialog
+        document.getElementById("dialog").showModal();
+      });
+
+      //recive un objeto de tipo event
+      document.forms[0].addEventListener('submit',(e)=>{
+        //quien es el emison del evento e.target
+
+        //le quito el por default
+        e.preventDefault();
+        alert("se cancelo el submit");
+
+        //e.stopPropagation() para la propagacion de las sigueinte funciones
+      });
+
+    </script>
+    
+
+</body>
+</html>

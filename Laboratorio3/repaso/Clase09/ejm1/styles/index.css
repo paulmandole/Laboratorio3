@@ -1,0 +1,172 @@
+/*se puede usar selector (div,h1,etc)
+puedo usar varios a la vez separados con ,*/
+
+/*LISTA DE PROPIEDADES*/
+/*margin -> quita o agrega el margen segun los px q le pase distancia entre el borde y otros elemento
+padding ->quita o agrega el pading segun los px q le pase es la distancia del borde interior y el contenido
+border -> rodea al contenido
+width -> ancho de lo que quiera en px % es para relativas o vw
+heigth -> el alto de lo que quiera
+box-sizing: border-box; el tamino se dimenciona en a la caja  del borde
+box-sizing: content-box; el tamanio se dimenciona en base a la caj del contenido
+margin-top/rigth/boton/lefth -> es para darle a una parte especifica del borde (puedo usar margin)(los margin botom y top se clapsan) 
+backgorun-imgane:url(imagen); -> agerga una imgaen de fondo
+background-size:contain ;->respeta el ancho y alto hasta q entreny rellena el espacio vacio con la imagen
+ background-repeat: no-repeat; - apra q no repita la imgen
+ background-position: center; apra centrar
+ display: inline; se vuevle en linea no puedo poner ancho y alto
+ display: inline-block; comportamiento de en linea pero puedo dimencionar
+ transition: background-color 5s;->para que la trancicion entre un colior y otro dure x segundos par ala propiedad que quiera
+display:none -> no muestra
+*/
+
+
+/** significa para todo*/
+*{
+    padding: 0;/**/
+    margin: 0;
+}
+
+body{
+    height: 1200px;
+    
+}
+/*FLEX POSITION*/
+/*agrego al contenedor padre display flex para que se ajusten todos */
+/*
+ display: flex; le da la propieda de flex al contenedor se usa en el padre(en general el body)
+ flex-wrap: wrap;/*los pone en una nueva linea si no entra
+ flex-wrap: wrap-reverse; lo mismo que l normal paero al revez empiesa del ultimo al primero
+ flex-direction: row-reverse; empiesa al revez del 
+ flex-direction: column; hace columnas si no entran  el reverse los invierte
+ justify-content: center; se centra todo 
+ justify-content: space-between; distrubiye entre los elementos uno de cada lado
+ justify-content: space-around; deja espacio dividido en el centro de los items y el borde
+ justify-content: space-evenly; todos los pespacios iguales
+ align-items: center; centra dentro de la row flexible estan centrados
+ align-items: flex-start; es el default
+ align-items: flex-end; pocisiona al final del flex
+ */
+
+section{
+    
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+}
+
+
+
+div{
+     background-color: blue; /*fondo*/
+     width: 200px;/*px abosluto %relativa vw(viuport width para hacerlo
+     q  se adacte al ancho de la pantalla)*/ 
+     height: 300px;/*50vh para q ocupe el 50vh */
+     /*display: inline-block;*/
+     /*width: 100%;/*que ocupe el 100%*/
+     /*min-width: 600px;minimo de width*/
+     /*max-width: 800px;/*maximo de width*/
+     
+     /*border-width: 1px; /*ancho borde*/
+     /*border-color: black; /*color de borde*/
+     /*border-style: solid; /*border solido son lineas*/
+    
+     /*atajo*/
+     border: 1px solid black;
+     /*margin:  20px;
+     padding: 5px;
+     /*box-sizing: border-box;*/
+     padding-top: 40px;
+     
+
+}
+#div2{
+    background-color: green;
+}
+
+/*pseudo clase detenta el cambio de esta en este caso pasar el maus*/
+/*
+
+TRANSICIONES
+div:hover{
+    background-color: red;
+    /*tracicion se encadenana con ,
+   transition: background-color 5s,margin-left 5s;
+    margin-left: -40px;
+}
+*/
+/*selector de Clase  (.)*/
+.dashed{
+    border: 5px dashed blueviolet;/*border dashed es como un borde lineas punteadas*/
+}
+.rojo,p{
+    background-color: rgb(90, 185, 209);/*rgb o rgba para buscar colores o exadecimales*/
+}
+
+/*selector de id #*/
+#div3{
+    margin: 10px 20px  10px 20px;/*top riggth bot left*/
+    background-color: yellowgreen;
+    background-image: url(../img/1024_2000.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*agregar fuentes desde archivos propios*/
+@font-face {
+    font-family: 'New Rocker';
+    src:url(../fonts/NewRocker-Regular.ttf);
+}
+
+p{
+    /*voy agregando fuentes por si no encuentra la que quiero*/
+    font-family: 'New Rocker', cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+/*POSICIONAMIENTO*/
+/*#div2{
+    /*position: relative;/*habilita propiedades por defecto es static
+    /*position: fixed;/*el 0,0 del viewport(el padre) y no escrolea no se mueve
+    /*position: sticky;/*es como un relative en cuanto a posicionamiento pero se queda fijo al wievport
+    
+    left: 0px;/*se aleja 100 px del magen izquierdo
+    top: 0px;/*no deja distancia con el top puede ser negativo o posistivo
+
+    
+    
+}*/
+
+
+
+/**MEDIA QUERY/
+/*Aplicar estilos dependiendo los tamanios de pantallas*/
+/*max-width:700px significa por debajop de 700px*/
+@media screen and (max-width:700px) {
+    #div3{
+        margin: 10px 20px  10px 20px;/*top riggth bot left*/
+        background-color: red;
+        background-image: url(../img/1024_2000.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }  
+}
+
+@media screen and (max-width:500px) {
+    #div3{
+        margin: 10px 20px  10px 20px;/*top riggth bot left*/
+        background-color: yellow;
+        background-image: url(../img/1024_2000.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        /*display:none  para no mostrar ejm publicidad*/
+    }  
+}
+/*1:18*/
+

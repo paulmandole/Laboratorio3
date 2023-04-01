@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.829);
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+}
+
+p{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/*el ul que esta dentro de nav  nav ul (asi es incluso para nietos o lo que sea)*/
+nav>ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav>ul>a{
+    position: relative;
+    text-decoration: none;
+    padding-left: 50px;
+    background-color: tomato;
+    border: 2px solid black;
+}
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--esto dice al navegador q es una pag web de html5-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--viewport es la parte visible del navegador y que se adapte al dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--pone en el resultado una breve descripcion de la pagina-->
+    <meta
+      name="description"
+      content="obtimizacion para los motores de busqueda"
+    />
+    <title>Clase01</title>
+
+    <style>
+
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <!--shortcats shift+alt+flecha copia linea-->
+    <!--br*5 es para hacer varias lineas de una-->
+    <!--<html propiedades>contenido</html>-->
+    <!--comentar todod lo que elijo control > llave de cierre-->
+    <!--ol>li*5  un ol que tenga dentro 5 li -->
+
+    <!--titulos h1 a h6-->
+    <h1>esto es un titulo h1</h1><!--solo debe haber uno-->
+    <h2>esto es un titulo h2</h2>
+    <h3>esto es un titulo h3</h3><!--se usan normalmente hasta aka-->
+    <h4>esto es un titulo h4</h4>
+    <h5>esto es un titulo h5</h5>
+    <h6>esto es un titulo h6</h6>
+
+    <!--paginas para buscar-->
+    <!--pagina htmlreference.io estan todas las etiquetas-->
+    <a href="https://htmlreference.io/">lista de estiquetas</a>
+    <!--pagina Tabla de etiquetas-->
+    <a href="http://mialtoweb.es/webs/tabla/">Tabla de etiquetas</a>
+    <!--pagina explica etiquetas-->
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/Heading_Elements">mdnReference</a>
+
+    <!--Etiqueta salto de linea-->
+    <br>
+    
+    <!--Parrafos-->
+    <!--lorem para rellenar *5 cinco lorems lorem10 agrega 10 palabras-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta reiciendis neque voluptate minima qui facilis, odio ratione tenetur illum quos nihil modi maiores error quia veritatis libero aperiam corrupti nobis!</p>
+    
+    <!--etiqueta en linea-->
+    <b>se ve en negrita solo estilo</b>
+    <br>
+    
+    <br>
+    <strong>tambien en negrita pero es importante que tiene mas fuerza</strong>
+    <br>
+    <i>cursiva visual</i>
+    <br>
+    <em>enfasis en lo que contiene</em>
+
+    <!--Layout de html modelo buscar-->
+    <!-- Etiquetas sin semantica   -->
+    <div><!--agrupa contenido evitar el uso-->
+        <h2>Parrafo1</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et iusto possimus recusandae amet quam repellendus quaerat, natus voluptatem incidunt alias voluptatibus harum voluptate quidem itaque perferendis magni quibusdam in! Tenetur.</p>
+    </div>
+    <div style="background-color: red;">
+        <h2>parrafo2</h2>
+        <p>Lorem ipsum dolor sit amet <span style="background-color: aqua;">consectetur</span> adipisicing elit. Eius doloribus ipsam praesentium neque sunt accusantium temporibus quibusdam architecto illum velit, quae dolores? Quo ipsa suscipit, itaque similique in explicabo delectus.</p>
+    </div>
+
+    <!--etiqueta contenedora en linea-->
+    <span>dasdasda</span>
+    <!--Listas-->
+
+    <!--lista ordenada-->
+    <!--reversed propiedad boleana no tiene propiedad invierte el orden lista-->
+    <!--start en que numero empiesa lista-->
+    <!--type  para  poner letras o lo que quiera-->
+    <h2>Lista ordenada</h2>
+    <br>
+    <ol  start="2">
+        <li>lunes</li>
+        <li>martes</li>
+        <li>miercoles</li>
+        <li>jueves</li>
+        <li>viernes</li>
+    </ol>
+
+    <!--Lista desordenada-->
+    <h2>Lista desordenada</h2>
+    <!-- circule circulitos-->
+    <br>
+    <ul >
+        <li>papa</li>
+        <li>cebolla</li>
+        <li>banana</li>
+        <li>cereza</li>
+        <li>manzana</li>
+    </ul>
+
+    <h2>Lista de definiciones</h2>
+    <br>
+    <!--Lista definicion-->
+    <dl>
+        <dt>Laboratorio</dt>
+        <dd>aca se ve php sdasdadsdasda</dd>
+        <dt>programacion</dt>
+        <dd>aca se ve java  sdasdadsdasda</dd>
+        <dt>ingles</dt>
+        <dd>aka se aprende ingles</dd>
+    </dl>
+
+    <!--tablas-->
+    <h2>Tablas</h2>
+    <table>
+        <!--encabezados-->
+        <thead><!--el encabezado es apra el navegador hay q usarlo-->
+            <tr>
+                <th>id</th>
+                <th>nombre</th>
+                <th>apellido</th>
+            </tr>
+        </thead>
+        
+        <!--contenido-->
+        <tbody><!--el cuerpo es apra el naveggador hay q usarlo-->
+            <tr>
+                <td>100</td>
+                <td>paul</td>
+                <td>mandole</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>pepe</td>
+                <td>tros</td>
+            </tr>
+            <tr>
+                <td>101</td><!--para que ocupe dos espacios en vertical-->
+                <td rowspan="2">pepe</td>
+                <td rowspan="2">tros</td>
+            </tr>
+            <tr>
+                <td>102</td>
+            </tr>
+
+        </tbody>
+        <tfoot><!--pie de la tabla-->
+            <tr>
+                <td colspan="3">Alumnos de tercero</td><!--ocupa los 3 lugares-->
+            </tr>
+        </tfoot>
+       
+    </table>
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="./js.js"></script>--> 
+    <!--Defer es para q espere que cargue el Dom-->
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+<body>
+    <!--no usar asi-->
+    <!--<button onclick="saludar();">Clikc me</button>-->
+    <button id="btn">Cliquear</button>
+
+
+    <!--Formularios-->
+    <h2>Formularios</h2>
+    <!--Uso clasico del formulario a travez de metodos action y method no se usa-->
+    <form>
+        <!--4 tipos de controles input,label,select,button-->
+        <!--label se usa para asociar con otro a travez del for-->
+        <label for="txtNombre" >Nombre</label>
+        <!--input por default es text name se usa para darle nombre por get 
+        autocomplete="off para que no muestre el atucompletado
+        placeholder="Ingrese nombre" muestra un texto cuando no se ingreso nada
+        required es requerido
+        pattern="" para validar puedo escribir una exprecion regular-->
+        <input id="txtNombre" type="text" name="nombre" autocomplete="off" placeholder="Ingrese nombre" required>
+        <br><br>
+        <label for="txtPass">password</label>
+        <input id="txtPass" type="password">  
+        <br><br>
+        <label for="txtMail">Email</label>
+        <input id="txtMail" type="email"> 
+        <br><br>
+        <label for="txtNumero">Numero</label>
+        <input id="txtNumero" max="100" min="0" value="10" type="number">  
+        <br><br>
+        <label for="color">Color</label>
+        <input id="color" type="color">
+        <br><br>
+        <label for="">Fecha</label>
+        <input type="date">
+        <br><br>
+        <label for="">archivo</label>
+        <input type="file">
+        <br><br>
+        <label for="">url</label>
+        <input type="url">
+        <br><br>
+        <label for="">search</label>
+        <input type="search">
+        <br><br>
+        
+        <!-- propiedad name para agruparlos 
+        radio para solo uno 
+        chekbox para seleccion multiple sin el mismo nombre
+        checked para selecionarlo de fauylt-->
+        <fieldset>
+            <legend>Deportes Practicado</legend>
+            <input type="radio" name="deporte" value="Football">Football <br>
+            <input type="radio" name="deporte" value="rugby" checked>rugby <br>
+            <input type="radio" name="deporte" value="Natacion">Natacion <br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Deportes Practicado multiple seleccion</legend>
+            <input type="checkbox" name="deporte" value="Football">Football <br>
+            <input type="checkbox" name="deporte" value="rugby" checked>rugby <br>
+            <input type="checkbox" name="deporte" value="Natacion">Natacion <br>
+        </fieldset>
+        <br><br>
+        <!--Control de tipo submit es para enviar por deafault value cambia el texto-->
+        <input type="submit" value="AltaPersona">
+    </form>
+    
+
+</body>
+</html>

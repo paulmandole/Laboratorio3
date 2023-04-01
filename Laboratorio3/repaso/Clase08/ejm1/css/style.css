@@ -1,0 +1,12 @@
+th,td{
+    border: 1px solid black;
+}
+
+thead{
+    background-color: orange;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}

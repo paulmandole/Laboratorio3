@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/bootstrap.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- se pone un div conclkase container o .container-fluid-->
+    
+    <div class=".container" style="background-color: aquamarine;height: 500px;">
+        <!--para alinear horizontal me tiene q sobrar espacio y se agrega a la row
+        justify-content-stard -> es por default
+        justify-content-between ->uno en cada punta
+        justify-content-center  -> centro
+        justify-content-end  -> al final
+        justify-content-around ->al rededor
+        -->
+        <div class="row justify-content-start" style="background-color: lightcoral;height: 150px;">
+
+            <div class="col-4" style="background-color: #ddd;height: 50px;">Columna2B</div>
+            <div class="col-4 " style="background-color: #ccc;height: 50px;">Columna2B</div>
+            
+        </div>
+        <br><br>    
+        <div class="row justify-content-center" style="background-color: lightcoral;height: 150px;">
+
+            <div class="col-4" style="background-color: #ddd;height: 50px;">Columna2B</div>
+            <div class="col-4 " style="background-color: #ccc;height: 50px;">Columna2B</div>
+            
+        </div>
+        <br><br>
+        <div class="row justify-content-between" style="background-color: lightcoral;height: 150px;">
+
+            <div class="col-4" style="background-color: #ddd;height: 50px;">Columna2B</div>
+            <div class="col-4 " style="background-color: #ccc;height: 50px;">Columna2B</div>
+            
+        </div>
+        <br><br>
+        <div class="row justify-content-end" style="background-color: lightcoral;height: 150px;">
+
+            <div class="col-4" style="background-color: #ddd;height: 50px;">Columna2B</div>
+            <div class="col-4 " style="background-color: #ccc;height: 50px;">Columna2B</div> 
+        </div>
+        <br><br>
+        <div class="row justify-content-around" style="background-color: lightcoral;height: 150px;">
+            <div class="col-4" style="background-color: #ddd;height: 50px;">Columna2B</div>
+            <div class="col-4 " style="background-color: #ccc;height: 50px;">Columna2B</div> 
+        </div>
+
+    </div>
+    
+</body>
+</html>

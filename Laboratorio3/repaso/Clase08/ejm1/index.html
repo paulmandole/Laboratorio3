@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla Dinamica</title>
+    <script src="./js/script.js" type="module" before></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <haader>
+      <!--Crud se suele llamr a los abm (Create read update delete)-->
+      <h1>Crud Personas</h1>
+    </haader>
+    <main>
+      <section class="form-persona">
+        <h2>Alta Persona</h2>
+        <form>
+          <input
+            type="text"
+            name="txtNombre"
+            placeholder="Ingrese Nombre"
+            autocomplete="off"
+          />
+          <br />
+          <input
+            type="number"
+            name="txtEdad"
+            placeholder="Ingrese Edad"
+            autocomplete="off"
+            min="18"
+            max="65"
+          />
+          <br />
+          <input
+            type="email"
+            name="txtEmail"
+            placeholder="Ingrese Email"
+            autocomplete="off"
+          />
+          <br />
+          <fieldset>
+            <legend>Genero</legend>
+            <input
+              type="radio"
+              name="rdoGenero"
+              value="Masculino"
+              checked
+            />Masculino
+            <input type="radio" name="rdoGenero" value="Femenino" />Femenino
+          </fieldset>
+          <input type="submit" value="Enviar" />
+          <input type="button" value="Eliminar" id="btnDelete" />
+          <input type="hidden" name="txtId" />
+        </form>
+      </section>
+      <section class="lista-personas">
+        <h2>listado Personas</h2>
+        <!--div#tabla apra agregarle el id-->
+        <div id="divTabla"></div>
+      </section>
+    </main>
+  </body>
+</html>

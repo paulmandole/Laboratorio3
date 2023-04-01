@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    height: 100vw;
+    width: 100vw;
+}
+ 
+header{
+    background-image: url(../img/header.jpg);
+    background-size: 100vw 100%; 
+    height: 600px;
+    
+}
+
+nav{
+    
+    display: flex;
+    align-items: center; 
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    border: 10px 20px;
+}
+
+nav ul>li>a{
+    text-decoration: none;
+    padding: 20px 10px;
+    border: 25px;
+    color: white;
+}
+
+#divNav{
+    padding-top: 20px;
+    display: flex;
+    justify-content:space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+h1{
+    padding-top: 400px;
+    padding-left: 40px;
+    max-width: 600px;
+    color: white;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    
+}
+
+
+/*hasta aka es el nav*/
+#nosotros{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    align-content: center;
+    
+}
+
+#nosotros img{
+    display: flex;
+    margin: auto;
+    padding: 20px 0px 40px 0px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size:x-large;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    
+p{
+    width: 400px;
+    text-align: center;
+    line-height: 30px;
+   
+}
+
+/*hasta aka la seccion nosotros*/
+
+
+#articulos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    height: 600px;
+    
+}
+.articulo{
+    
+    justify-content:space-around;
+    min-width: 400px;
+    width:400px;
+    height:600px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(207, 207, 207);
+    margin-bottom: 10px;
+    
+    
+}
+
+main>div .articulo>img{
+    display: flex;
+    object-fit: cover;
+    width:400px;
+    height:250px;
+    margin: auto;
+    
+    
+}
+.propiedades{
+    display: block;
+    align-items: center;
+    
+    
+  
+}
+.propiedades ul{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+    align-items: center;
+    align-content: center;
+
+}
+
+
+
+.precio{
+    display: flex;
+    color: rgb(113, 176, 0);
+    font-weight:540;
+    text-align: left;
+    
+
+}
+
+ul>li>span{
+  
+    position: absolute;
+    padding: 10px;
+
+}
+
+.aButton{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    background-color: rgb(224, 135, 9);
+    height: 40px;
+    width: 360px;
+    color: white;
+    font-weight:540;
+}
+.propiedades>p{
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    padding-left: 15px;
+    width: auto;
+}
+.propiedades h3{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 45px;
+    padding-left: 15px;
+    text-transform:capitalize;
+}
+
+
+
+.verTodas{
+    
+    
+    background-color: rgb(113, 177, 0);
+    width: 150px;
+    text-transform:capitalize;  
+    
+}
+
+#divVerTodas{
+   
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 49px 20px ;
+    
+
+}
+
+#casaSuenios{
+
+    background-image: url(../img/encuentra.jpg);
+    background-size:100% 100%; 
+    height: 400px;
+    
+    justify-content: flex-start;
+    display: flex;
+    
+}
+
+#casaSuenios div{
+    position: relative;
+    justify-content: flex-start;
+   
+    min-width: 400px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+#casaSuenios h2{
+    display: inline-block;
+    width: 100%;
+    color: white;
+    text-align: left;
+    padding-left: 0;
+    margin: 0;
+    justify-content: left;
+}
+#casaSuenios h2{
+    padding-bottom: 60px;
+    font-size: xx-large;
+}
+
+#casaSuenios p{
+    font-size:large;
+    width: auto;
+    color: white;
+    
+
+}
+
+#casaSuenios a{
+
+    position: absolute;
+    width: 150px;
+    margin-top: 280px;
+    margin-left: 50px;
+
+}
+/*contactanos*/
+
+#nuestroBlog{
+    display: flex;
+    justify-content: space-around;
+    align-content:center;
+    
+}
+#nuestroBlog>section
+{
+    
+    max-width: 50%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+#nuestroBlog article{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+#nuestroBlog img{
+    max-width: 30%;
+    max-height: 250px;
+}
+
+#nuestroBlog div a{
+    display: flex;
+    text-decoration: none;
+    justify-content: left;
+    
+}
+#nuestroBlog aside{
+    
+    max-width: 40%;
+}
+.blogArt{
+    color: black;
+    text-transform: initial;
+    padding-left: 30px;
+    
+}
+
+#nuestroBlog h3{
+   
+    font-size:x-large;
+    text-transform: initial;
+   
+}
+
+#nuestroBlog p{
+    
+    text-align: left;
+    font-size:small;
+    
+    
+}
+
+p>span,date{
+    color: orange;
+}
+
+aside>div{
+    display: flex;
+    background-color: rgb(113, 177, 0);
+    color: rgb(235, 242, 186);
+    text-align: center;
+    line-height:40px;
+    
+    height: 280px;
+    
+    width: 400px;
+    border-radius: 6%;
+    
+}
+
+aside{
+    
+    justify-content: center;
+}
+aside img{
+    position: relative;
+    margin-left: 5px;
+    width: 30px;
+    top:-80px;
+    left: 40px;
+    
+}
+blockquote{
+    position: relative;
+    max-width: 60%;
+    text-align: left;
+    font-size:17px;
+    font-weight:100;
+    left: 50px;
+    bottom: -25px;
+
+
+}
+cite{
+    display: inline-block;
+    position: relative;
+    color: white;
+    align-items: flex-end;
+    top: 40px;
+    left: 80px;
+
+}
+
+/*footer*/
+footer{ 
+
+    background-color: rgb(51, 51, 51);
+    height: 50px;
+    
+    
+}
+
+footer>nav{
+    display: flex;
+    height: 100%;
+    
+    
+    
+}
+footer>nav>div{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
